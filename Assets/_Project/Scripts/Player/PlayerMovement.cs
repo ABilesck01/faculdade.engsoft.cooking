@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
         _characterController = GetComponent<CharacterController>();
         _transform = transform;
     }
