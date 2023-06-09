@@ -12,6 +12,8 @@ public class PlayerHands : MonoBehaviour
     [Space] 
     [SerializeField] private BaseIngredient ingredientInHand;
 
+    public BaseIngredient GetIngredientInHand => ingredientInHand;
+    
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
