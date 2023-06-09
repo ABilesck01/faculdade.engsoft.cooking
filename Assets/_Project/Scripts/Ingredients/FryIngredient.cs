@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FryIngredient : MonoBehaviour
+[CreateAssetMenu(menuName = "Assets/Fry ingredient")]
+public class FryIngredient : BaseIngredient
 {
     [SerializeField] private float frySpeed;
     [SerializeField] private BaseIngredient outputIngredient;
